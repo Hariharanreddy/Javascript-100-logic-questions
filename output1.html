@@ -1,0 +1,715 @@
+<script>
+    //1 - when we compare two arrays like this, that arrays memory location is compared
+    // let a=[];
+    // let b=[];
+    // console.warn(a==b)        //false
+    // console.warn(a===b)       //false       //value + type is compared
+</script>
+<script>
+    //2
+    // let a = [];
+    // let b = a;
+    // console.warn(a==b)      //true
+    // console.warn(a===b)     //true
+
+</script>
+<script>
+    //3 - value is compared when index is specified
+    // let a = [20];
+    // let b = [20];
+    // console.warn(a[0] == b[0]);     //true
+    // console.warn(a[0] === b[0]);    //true
+</script>
+<script>
+    //4 - we destructered the array so the output
+
+    // let z = [1, 2, 3, 4];
+    // let a = {name: "anil"}
+    // console.warn(...z + 1);     //1, 2, 3, 4 1        //1 is concatenated               
+</script>
+<script>
+    //5 - Not a number is of type number
+
+    // console.log(typeof NaN)     //number
+</script>
+<script>
+    //6
+    // let data = 10 - -10;
+    // console.warn(data);     //20
+</script>
+<script>
+    //7
+
+    // const set = new Set([1, 1, 2, 3, 4]);
+    // console.log(set);           //set(4) {1, 2, 3, 4}
+</script>
+<script>
+    //8  - delete operators deletes the key value pair and returns true, if they existed
+
+    // let data = {name: "Anil"};
+    // console.warn(delete data.name);
+    // console.warn(data);     
+</script>
+
+<script>
+    //9 - delete operator just deletes the properties.
+
+    // let data = {name: "Anil"};
+    // console.warn(delete data);  
+</script>
+<script>
+    //10 - when we want to store data arrays, values in another array.
+
+    // const data = ["a", "b", "c"];
+    // const [y] = data;
+    // console.log(y);         //a
+</script>
+<script>
+    //11
+
+    // const data = ["a", "b", "C"]
+    // const [, y] = data;
+    // console.log(y);
+</script>
+<script>
+    //12 - to get name property without dot operator,
+
+    // const data = { name: "anil", age: 29, skill: "JS" };
+    // const { name, age } = data;
+    // console.log(name , age);
+</script>
+<script>
+    //13 - destructuring can be used for merging too
+
+    // const data = { name: "anil", age: 29, skill: "JS" };
+    // const info = { city: "Noida", mail: "abc@gmail.com" };
+    // const merge = { ...data, ...info }
+    // console.log(merge);
+</script>
+<script>
+    //14
+
+    // let data = { name: "anil", age: 29, skill: "JS" };
+    // let info = { city: "Noida", mail: "abc@gmail.com" };
+    // data = { data, ...info }
+    // console.log(data);
+
+</script>
+<script>
+    //15 - last destructuring overrides the previous same key value pair.
+
+    // const data = { name: "anil", age: 29, skill: "JS" };
+    // const info = { city: "Noida", skill: "JS" };
+    // const merge = { ...data, ...info }
+    // console.log(merge);
+</script>
+<script>
+    //16
+
+    // const name = "Anil";
+    // console.log(name());    //TypeError - name is not a function 
+</script>
+<script>
+    //*17   - || operator initially contains true, but while checking condn fills the first positive
+    //         value like {}, 10, "hari" and returns that. remember it fills and checks first positive value
+
+    // const result = false || {} || null;
+    // console.warn(result);
+</script>
+<script>
+    //18   - if doesnt get any positive value it takes the last value
+
+    // const result = null || false || "";
+    // console.warn(result);
+</script>
+<script>
+    //19
+
+    // const result = [] || true || "";
+    // console.warn(result);
+</script>
+
+<script>
+    //20 - promise returns a promise
+
+    // console.log(Promise.resolve(5));
+</script>
+<script>
+    //20  - emojis have unicode, same unicode will return true
+
+    // console.log("😁" === "😁")
+</script>
+<script>
+    //21 - A common use of JSON is to exchange data to/from a web server.
+    // When receiving data from a web server, the data is always a string
+    // Parse the data with JSON.parse(), and the data becomes a JavaScript object.
+
+    // const store = JSON.parse('{"name":"John", "age":30, "city":"New York"}');
+    // console.log(store);
+</script>
+<script>
+    //22 - Reference Error
+    // let and const doesnt allow to use variables before declaration. 
+
+    // let name = "hari";
+
+    // function getName(){
+    //     console.log(name);
+    //     let name = "anil";
+    // }
+
+    // getName();
+</script>
+<script>
+    //22 - let scope is block level, outside let declared can be accessed inside
+
+    // let name = "hari";
+
+    // function getName(){
+    //     console.log(name);
+    // }
+
+    // getName();
+</script>
+<script>
+    //24 - Template Literals use back-ticks (``) rather than the quotes ("") to define a string:
+
+    // console.log(`${(x => x+1)('I love')} to program`)
+</script>
+<script>
+    //25
+
+    // function sum(x, y, z){
+    //     return x+y+z;
+    // }
+
+    // console.log(sum(1, 2, 3)) 
+    // console.log(sum(...[1,2,3])) 
+
+</script>
+<script>
+    //26 - code is executed in javascript from left to right
+
+    //typeof name is string, so !string is false. imp to remember
+
+    // const name = 'code step';
+    // console.log(!typeof name === 'object');     
+    // console.log(!typeof name === 'string'); 
+</script>
+<script>
+    //27 - isNaN returns true if not a number.
+
+    // const name = "Subscribe"
+    // const age = 21
+    // console.log(isNaN(name));
+    // console.log(isNaN(21));
+
+</script>
+<script>    
+    //28
+
+    // let person = {name : "Anil"};
+
+    // //what can we use to modify person object
+    // Object.seal(person);        //using seal will fix the number of keys you cannot add more key value.
+    //                             //though you can change existing values of keys
+
+    // console.log(person);
+</script>
+<script>
+    //29
+
+    // let data = [2, 9, 1, 19];
+
+    //remove first element
+    // data.shift();
+    // console.log(data);
+</script>
+<script>
+    //30
+
+    //remove last element
+    // let data = [1, 2,3 ];
+    // data.pop();
+    // console.log(data);
+
+
+</script>
+<script>
+    //31
+
+    // let a = 31;
+
+    // //check any value is odd or even
+    // console.log(a%2 == 0 ? "even" : "odd")
+</script>
+<script>
+    //32
+
+    // let data = {
+    //     name: "anil"
+    // }
+
+    // delete data.name;
+    // console.log(data);
+</script>
+<script>
+    //33
+
+    // let data = "true";
+
+    // //convert data to boolean false
+    // console.log(typeof !data);
+    // console.log(!data);
+
+</script>
+<script>
+    //34
+
+    // let data = "true";
+    // //convert true boolean
+
+    // console.log(!!data);    
+</script>
+<script>
+    //34
+
+    //difference between map and forEach function
+    //map function will always return the part that is inside of it
+    //where as if not specified forEach will not return anything
+
+</script>
+<script>
+    //35 - when we use delete operator it becomes empty,
+    //empty basically means nothing, undefined or null occupy some space but empty doesn't.
+
+    // let data = ["anil", "peter", "bruce"];
+    // delete data[1]; 
+    // console.log(data);
+</script>
+<script>
+    //36 - length remains same
+
+    // let data = ["anil", "peter", "bruce"];
+    // delete data[1]; 
+    // console.log(data.length);
+</script>
+<script>
+    //37
+
+    // let a = [1, 2, 3]
+    // let b = [4, 5, 6]
+    // let c = [...a, ...b];
+    // console.log(c);
+</script>
+<script>
+    //38
+
+    // let c = 3 ** 3;
+    // console.log(c);
+</script>
+<script>
+    //39 - all the special functions or api's are put inside stack, and are executed at the end 
+    // when all the remaining codes have completed their execution. 
+
+    // let a = 2;
+
+    // setTimeout(()=> {
+    //     console.log(a);
+    // }, 0)
+
+    // a = 100;
+</script>
+<script>
+    //40 - javascript is case-sensitive
+
+    // let a = 2;
+    // let A = 30;
+    // console.log(A);
+</script>
+<script>
+    //41
+
+    // let A10 = "like"
+    // let 10a = "okay";   //error
+    // console.log(A10);
+</script>
+<script>
+    //42
+
+    // let a = "like"
+    // let b = `like`
+    // console.log(a === b);   //true
+
+</script>
+<script>
+    //43
+
+    // let a = 1;
+    // let c = 2;
+    // console.log(--c === a);
+</script>
+<script>
+    //44
+
+    // let a = 1;
+    // let b = 1;
+    // let c = 2;
+    // console.log(a === b === --c);
+</script>
+<script>
+    //45
+
+    // console.log(3 *** 3);   //error
+</script>
+<script>
+    //46 - hoisting happened on a.
+
+    // console.log(a);  //undefined
+    // var a;
+</script>
+<script>
+    //48 - Nested array will be formed
+
+    // console.log([[[[]]]]);
+</script>
+<script>
+    //49
+
+    //how to find OS name
+    // console.log(navigator.platform);
+</script>
+<script>
+    //50 - for is a reserved keyword
+
+    // let for = 100;
+</script>
+<script>
+    //51 - hoisting happened
+
+    // function fruit() {
+    //     console.log(name);
+    //     console.log(price);
+
+    //     var name = "apple"
+    //     let price = 20
+    // }
+
+    // fruit();
+</script>
+<script>
+    //52** - var has global level scope.
+    // first the loop executed and stored 3 setTimeout one by one to the stack
+    // after the loop execution i value became 3. So, setTimeout printed 3 3 3 
+
+    // for(var i = 0; i<3 ; i++){
+    //     setTimeout(() => console.log((i)), 1);      //3 3 3
+    // }
+</script>
+<script>
+    //53 - let has block level scope
+
+    // for(let i = 0; i<3 ; i++){
+    //     setTimeout(() => console.log((i)), 1);      //0 1 2
+    // }
+
+</script>
+<script>
+    //54 - when we add + before string , boolean etc it becomes a number
+
+    // console.log(+false);
+    // console.log(+true);
+    // console.log(typeof +true);
+</script>
+<script>
+    //55
+
+    // console.log("anil");
+    // console.log(typeof(!"anil"));
+</script>
+<script>
+    //56 - remember syntax 
+
+    // let data = "size";
+    // const bird = {
+    //     size: "small"
+    // }
+
+    // console.log(bird[data]);
+    // console.log(bird["size"]);
+    // console.log(bird.size);
+    // console.log(bird.data);
+
+    // o/p
+    // small
+    // small
+    // small
+    // undefined
+</script>
+<script>
+    //57 - when we store array or object into another variable, there memory location is shared not the object.
+    
+    // let c = { name : "peter"};
+    // let d;
+
+    // d = c;
+    // c.name = "anil";
+    // console.log(d.name);
+</script>
+<script>
+    //58 - with can redeclare variables any number of times, but that is not true for let and const.
+
+    // var x;
+    // var x = 10;
+    // console.log(x);
+</script>
+<script>    
+    //59 - Syntax error
+
+    // var x;
+    // let x = 10;
+</script>
+<script>
+    //60 - new Number returns an object.
+
+    // let a = 3;
+    // let b = new Number(3)
+
+    // console.log(a == b);
+    // console.log(a === b);       
+</script>
+<script>
+    //61
+
+    // let name;
+    // nmae = {};
+    // console.log(name);
+</script>
+<script>
+    //62 -  fruit.name won't change anything
+
+    // function fruit() {
+    //     console.log("woof");
+    // }
+
+    // fruit.name = "apple"
+
+    // fruit()
+
+    // console.log(fruit);
+</script>
+<script>
+    //63 - when we add number and string, the number concatenates at the end.
+
+    // function sum(a, b){
+    //     return a+b
+    // }
+
+    // console.log(1, "2");
+</script>
+<script>
+    //65** - when we use spread operator, the datatype of it becomes an object.
+    // infact, array is also an object in js
+
+    // function getAge(...args){
+    //     console.log(typeof args);
+    // }
+
+    // getAge(21);
+</script>
+<script>
+    //66 - When we dont define the datatype of variable it becomes var.
+    // 'use strict' specifies no hoisting will happen and data type should be specified.
+
+    // function getAge() {
+    //     'use strict'
+    //     age = 21;
+    //     console.log(age);
+    // }
+
+    // getAge();
+</script>
+<script>
+    //67 -  eval function converts the string into expression.
+
+    // const sum = eval('10*10+5');
+    // console.log(sum);
+</script>
+<script>
+    //68
+
+    // How long is cool_secret accessible? 
+    // When the tab closes the session storage gets emptied. LocalStorage stays there till it is not cleared 
+    // externally.
+    // sessionStorage.setItem('cool_secret', 123);
+</script>
+<script>
+    //69 - we can define the object key as a numeric value.
+    // we either use string or object for keys both will do the same work.
+
+    // const obj = { 1: "a", 2: "b"};
+    // console.log(obj.hasOwnProperty("1"));
+    // console.log(obj.hasOwnProperty(1));
+
+</script>
+<script>
+    //70 - latest same key will override the previous same key.
+
+    // const obj = { 1: "a", 2: "b", 1: "c"};
+    // console.log(obj);
+</script>
+<script>
+    //71 -  continue will skip the entire execution of code under it. and execute the next loop.
+
+    // for(let i=1; i<5; i++){
+    //     if(i === 3) continue;
+    //     console.log((i));
+    // }
+</script>
+<script>
+    //72 - setTimeout gets stored in stack, rest of the code gets executed.
+
+    // const foo = () => console.log("first");
+    // const bar = () => setTimeout(() => console.log("second"))
+    // const baz = () => console.log("third");
+
+    // bar();
+    // foo();
+    // baz();
+</script>
+
+<!-- <div>
+   
+
+    <div onclick="console.log('first div')">
+        <div onclick="console.log('second div')">
+            <button onclick="console.log('button')">
+                Click!
+                </button>
+        </div>
+    </div>
+
+</div> -->
+
+<script>
+    //74 - 
+    // call is a function that you use to change the value of this inside a function and execute it with the arguments provided.
+    // func.call(thisObj, args1, args2, ...)
+
+    //bind does the same, but it needs to be called extrinsically.
+
+    // const person = {name : "anil"};
+
+    // function sayHi(age) {
+    //     return `${this.name} is ${age}`;
+    // }
+
+    // console.log(sayHi.call(person, 21));
+    // console.log(sayHi.bind(person, 21));      //bind will return a function
+    // console.log(sayHi.bind(person, 21)());    //bind needs to be called extrinsically
+
+
+</script>
+<script>    
+    //75
+
+    // function sayHi() {
+    //     return (() => 0)();
+    // }
+
+    // console.log(typeof sayHi());
+</script>
+<script>
+    //76 - answer would be function
+
+    // function sayHi() {
+    //     return () => 0;
+    // }
+
+    // console.log(typeof sayHi());
+    // console.log(typeof sayHi()()); //here first the sayHi is called then the function inside the sayHi function is called
+</script>
+<script>
+    //77 - 1 typeof will return number, that number is a string so string is printed
+
+    // console.log(typeof typeof 1);
+</script>
+<script>
+    //78
+
+    // const numbers = [1, 2, 3]
+    // numbers[6] = 11;
+    // console.log(numbers);   // [1, 2, 3, empty × 3, 11]
+
+</script>
+<script>
+    //79 -  infinite nested array (MAGICAL)
+
+    // const numbers = [1, 2, 3]
+    // numbers[6] = numbers;
+    // console.log(numbers); 
+</script>
+<script>
+    //80 Everything in js is either a primitive or object.
+
+    // primitive - string
+    // number
+    // bigint
+    // boolean
+    // undefined
+    // symbol
+    // null
+</script>
+<script>
+    //81
+
+    // console.log(!!null);
+    // console.log(!!"");
+    // console.log(!!1);
+</script>
+<script>
+    //82 -  setInterval returns an id for its identification when we want to stop it.
+
+    // console.log(setInterval(() => console.log("Hi"), 1000));
+    // console.log(setInterval(() => console.log("Hi"), 1000));
+    // console.log(setInterval(() => console.log("Hi"), 1000));
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
+<script>
+
+</script>
